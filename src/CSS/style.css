@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+table{
+  width: 100%;
+  margin-top: 17px;
+}
+
+td img{
+  height:28px;
+  width:28px;
+}
+
+
+.f_se{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#main{
+  width:80%;
+  margin:auto;
+  margin-top: 15px;
+}
+
+
+#searchbarContainer{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#searchbar{
+  width:87%;
+}
+#searchbarContainer input{
+  width:100%;
+  height:35px;
+  font-size: large;
+}
+
+#searchbarContainer input:focus{
+  outline: none !important;
+  border:1px solid lightblue;
+  box-shadow: 1 0 10px #719ECE;
+  width: 100%;
+}
+
+.btn{
+  margin-top: -2px;
+ 
+  
+}
+
+
+/* styles for responsiveness on the basis of different device length */
+
+@media Screen and (max-width:768px){
+    #searchbar{
+      width: 70%;
+      margin-top: 30px;
+      height:40px;
+    }
+    .btn{
+      margin-top: 30px;
+    }
+    td img{
+      height:35px;
+      width:35px;
+    }
+
+   
+}
+
+@media Screen and (max-width:512px){
+    #searchbar{
+      width: 60%;
+      margin-top: 10px;
+      height:40px;
+    }
+    .btn{
+      margin-top: 10px;
+    }
+    #main{
+      width:95%;
+      margin:auto;
+      margin-top: 15px;
+    }
+    td img{
+      height:25px;
+      width:25px;
+    }
+
+   
+}
+
+@media Screen and (max-width:400px){
+  #searchbar{
+    width: 70%;
+  }
+  #searchbarContainer{
+    width: 100%;
+  }
+  .btn{
+    font-size: x-small!important;
+    height:35px;
+  }
+  #main{
+    width:98%;
+    margin:auto;
+    margin-top: 15px;
+    font-size: x-small;
+  }
+  td img{
+    height:25px;
+    width:25px;
+  }
+  #searchbarContainer input{
+    font-size: small;
+  }
+}
